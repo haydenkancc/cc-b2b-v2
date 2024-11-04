@@ -39,8 +39,7 @@
   }
 
   &__name {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+    @include variables.text-md;
     font-weight: 500;
     display: flex;
     align-items: center;

@@ -1,3 +1,13 @@
+$fg-primary: $dark-primary;
+$fg-secondary: $dark-secondary;
+$fg-secondary-alt: $dark-secondary-alt;
+$fg-tertiary: $dark-tertiary;
+
+$bg-primary: $light-primary;
+$bg-secondary: $light-secondary;
+$bg-secondary-alt: $light-secondary-alt;
+$bg-border: $light-tertiary;
+
 
 $dark-primary: #1d1d1f;
 $dark-secondary: #4b4b4b;
@@ -26,3 +36,47 @@ $bg-yellow: #ffe045;
 $fg-green: #008009;
 $bg-green: #34ca29;
 
+@mixin text-xs {
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+}
+
+@mixin text-sm {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@mixin text-md {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@mixin text-lg {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@mixin text-xl {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@mixin text-2xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@mixin text-3xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@mixin text-4xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@mixin text-5xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
