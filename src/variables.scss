@@ -1,13 +1,3 @@
-$fg-primary: $dark-primary;
-$fg-secondary: $dark-secondary;
-$fg-secondary-alt: $dark-secondary-alt;
-$fg-tertiary: $dark-tertiary;
-
-$bg-primary: $light-primary;
-$bg-secondary: $light-secondary;
-$bg-secondary-alt: $light-secondary-alt;
-$bg-border: $light-tertiary;
-
 
 $dark-primary: #1d1d1f;
 $dark-secondary: #4b4b4b;
@@ -35,6 +25,16 @@ $bg-yellow: #ffe045;
 
 $fg-green: #008009;
 $bg-green: #34ca29;
+
+$fg-primary: $dark-primary;
+$fg-secondary: $dark-secondary;
+$fg-secondary-alt: $dark-secondary-alt;
+$fg-tertiary: $dark-tertiary;
+
+$bg-primary: $light-primary;
+$bg-secondary: $light-secondary;
+$bg-secondary-alt: $light-secondary-alt;
+$bg-border: $light-tertiary;
 
 @mixin text-xs {
   font-size: 0.625rem;
