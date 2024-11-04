@@ -1,0 +1,8 @@
+@use '@/variables';
+
+.section {
+  padding: 0.875rem 2rem;
+  border-bottom: 1px solid variables.$light-tertiary;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
