@@ -1,0 +1,41 @@
+@use '@/variables';
+
+.page {
+
+}
+
+.sectionList {
+  position: relative;
+  display: flex;
+  margin-inline: 2rem;
+  gap: 2rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 1px solid #e6e6e6;
+    z-index: -1;
+  }
+
+  &__item {
+    @include variables.text-md;
+    background: unset;
+    border: none;
+    font-family: unset;
+    padding: 0 0 0.5rem;
+    color: variables.$fg-secondary;
+    border-bottom: 2px solid transparent;
+
+    &[data-focused] {
+      outline: none;
+    }
+
+    &:first-child {
+      color: variables.$fg-primary;
+      border-color: variables.$fg-primary;
+    }
+  }
+}

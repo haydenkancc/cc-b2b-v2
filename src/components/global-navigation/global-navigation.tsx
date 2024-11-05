@@ -8,6 +8,8 @@ import {
     MixerVerticalIcon,
     ReaderIcon
 } from '@radix-ui/react-icons';
+
+import { ShoppingBag, ShoppingBagOpen } from '@phosphor-icons/react';
 import {ListBox, ListBoxItem} from 'react-aria-components';
 import Link from 'next/link';
 
@@ -61,6 +63,12 @@ const overviewItems = [
 
 const accountItems = [
     {
+        id: 4,
+        title: 'Cart',
+        element: <ShoppingBagOpen />,
+        route: "",
+    },
+    {
         id: 1,
         title: 'Notifications',
         element: <BellIcon />,
@@ -99,8 +107,9 @@ export default function GlobalNavigation() {
                             Overview
                         </div>
                         <ListBox items={overviewItems} className={s.list}
-                                 selectionMode="multiple"
-                                 selectionBehavior="replace">
+                                selectionMode="multiple"
+                                selectionBehavior="replace"
+                                aria-label="hello">
                             {item => (
                                 <ListBoxItem href={item.route} className={s.list__item}>
                                     {item.element}{item.title}
@@ -119,7 +128,8 @@ export default function GlobalNavigation() {
                         </div>
                         <ListBox items={accountItems} className={s.list}
                                  selectionMode="multiple"
-                                 selectionBehavior="replace">
+                                 selectionBehavior="replace"
+                                 aria-label="hello">
                             {item => (
                                 <ListBoxItem href={item.route} className={s.list__item}>
                                     {item.element}{item.title}

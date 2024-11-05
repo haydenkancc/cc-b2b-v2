@@ -21,15 +21,15 @@ export default function Breadcrumbs() {
     return (
         <div className={s.section}>
             <AriaBreadcrumbs className={s.breadcrumbs}>
-                <AriaBreadcrumb className={s.breadcrumb}>
+                <AriaBreadcrumb className={s.breadcrumb} aria-label="hello">
                     <Link className={s.link} href="/">Home</Link>
                     <SlashIcon />
                 </AriaBreadcrumb>
-                <AriaBreadcrumb className={s.breadcrumb}>
+                <AriaBreadcrumb className={s.breadcrumb} aria-label="hello">
                     <Link className={s.link} href="/react-aria/">React Aria</Link>
                     <SlashIcon />
                 </AriaBreadcrumb>
-                <AriaBreadcrumb className={s.breadcrumb}>
+                <AriaBreadcrumb className={s.breadcrumb} aria-label="hello">
                     <Link className={s.link}>Breadcrumbs</Link>
                 </AriaBreadcrumb>
             </AriaBreadcrumbs>

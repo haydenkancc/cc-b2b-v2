@@ -1,0 +1,68 @@
+@use '@/variables';
+
+.section {
+  display: grid;
+  margin: 1.5rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e6e6e6;
+  border-radius: 0.375rem;
+  padding: 1.25rem 1rem;
+}
+
+.headings {
+  margin: 0 0 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__image {
+    height: 1.25rem;
+    display: flex;
+  }
+
+  &__tag {
+    @include variables.text-sm;
+    padding: 0.125rem 0.5rem;
+    color: variables.$fg-orange;
+  }
+}
+
+.title {
+  @include variables.text-md;
+  margin-bottom: 0.125rem;
+}
+
+.shortDesc {
+  @include variables.text-sm;
+  color: variables.$fg-secondary;
+  margin-bottom: 0.625rem;
+}
+
+.longDesc {
+  @include variables.text-sm;
+  height: 3rem;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow-y: hidden;
+  color: variables.$fg-secondary;
+}
+
+.price {
+  @include variables.text-xl;
+  margin: 1.5rem 0 0;
+  display: flex;
+  align-items: start;
+
+  &__period {
+    @include variables.text-sm;
+    color: variables.$fg-secondary;
+  }
+}

@@ -1,6 +1,9 @@
 @use '@/variables';
 
 .globalNavigation {
+  position: sticky;
+  top: 0;
+  height: 100lvh;
   flex: 0 0 auto;
   width: 16rem;
   display: flex;

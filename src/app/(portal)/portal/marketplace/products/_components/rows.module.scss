@@ -1,0 +1,95 @@
+@use '@/variables';
+
+.rows {
+  margin: 2rem 2rem;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 4rem;
+}
+
+.row {
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+
+  &[data-focused] {
+    outline: none;
+
+  }
+}
+
+.image {
+  flex: 0 0 auto;
+  display: flex;
+  height: 4.75rem;
+  padding-top: 0.25rem;
+  box-sizing: border-box;
+}
+
+.content {
+  flex: 1 1 auto;
+  margin: 0 0 0 2rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.titleSection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.625rem;
+}
+
+.titles {
+
+}
+
+.title {
+  @include variables.text-md;
+  color: variables.$fg-primary;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  color: variables.$fg-primary;
+
+  &__wrapper {
+    display: flex;
+  }
+}
+
+.tag {
+  @include variables.text-sm;
+  color: variables.$fg-orange;
+}
+
+.shortDesc {
+  @include variables.text-sm;
+  text-decoration: none;
+  color: variables.$fg-secondary;
+}
+
+.longDesc {
+  @include variables.text-sm;
+  height: 2rem;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow-y: hidden;
+  color: variables.$fg-secondary;
+
+}
+
+.price {
+  @include variables.text-xl;
+  display: flex;
+
+  &__period {
+    @include variables.text-sm;
+    color: variables.$fg-secondary;
+  }
+}

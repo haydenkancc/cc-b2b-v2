@@ -3,3 +3,36 @@
 .page {
 
 }
+
+.section {
+  margin-bottom: 4rem;
+
+  &__headings {
+    @include variables.text-lg;
+    margin-inline: 2rem;
+    color: variables.$fg-primary;
+  }
+
+  &__header {
+
+  }
+
+  &__subheadings {
+    @include variables.text-md;
+    display: flex;
+    justify-content: space-between;
+    color: variables.$fg-secondary;
+  }
+
+  &__subheader {
+
+  }
+
+  &__link {
+    text-decoration: none;
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    color: variables.$fg-blue;
+  }
+}

@@ -1,0 +1,86 @@
+@use '@/variables';
+
+.page {
+
+}
+
+.titleSection {
+  margin-inline: 2rem;
+
+  &__title {
+    @include variables.text-3xl;
+    margin: 0 0 0.25rem;
+  }
+
+  &__subtitle {
+    @include variables.text-sm;
+    color: variables.$fg-secondary;
+  }
+}
+
+.infoSection {
+  margin: 2rem 2rem;
+  display: flex;
+}
+
+
+.logo {
+  min-width: 0;
+  flex: 0 1 auto;
+  height: 16rem;
+  padding: 3rem 6rem;
+  display: flex;
+  border: 1px solid #e6e6e6;
+  border-radius: 0.375rem;
+  justify-content: center;
+  box-sizing: border-box;
+
+  & > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.info {
+  flex: 1 0 auto;
+  width: 60%;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.price {
+  @include variables.text-3xl;
+  display: flex;
+  &__period {
+    @include variables.text-md;
+    color: variables.$fg-secondary;
+  }
+}
+
+.longDesc {
+  @include variables.text-md;
+  color: variables.$fg-secondary;
+}
+
+.button {
+  @include variables.text-md;
+  font-family: unset;
+  padding: 0.375rem 1.5rem;
+  border-radius: 0.375rem;
+  background: variables.$fg-primary;
+  color: variables.$bg-primary;
+  border: unset;
+  text-decoration: none;
+  cursor: pointer;
+
+  &[data-focused] {
+    outline: none;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+}

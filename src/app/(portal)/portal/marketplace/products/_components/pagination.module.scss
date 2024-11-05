@@ -1,0 +1,49 @@
+@use '@/variables';
+
+.section {
+  @include variables.text-md;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2rem 1rem;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+
+  & > svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.pageCount {
+  position: absolute;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  transform: translateX(-50%);
+
+}
+
+.numberField {
+
+}
+
+.input {
+  @include variables.text-md;
+  font-family: unset;
+  border: 1px solid variables.$bg-border;
+  border-radius: 0.375rem;
+  text-align: center;
+
+  &[data-focused] {
+    outline: none;
+  }
+}
+

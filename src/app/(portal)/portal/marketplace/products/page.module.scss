@@ -1,0 +1,33 @@
+@use '@/variables';
+
+.page {
+
+}
+
+.titleSection {
+  margin-inline: 2rem;
+  border-bottom: 1px solid variables.$bg-border;
+}
+
+.headings {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0.25rem;
+
+  &__header {
+    @include variables.text-3xl;
+  }
+
+  &__search {
+
+  }
+
+}
+
+.subheadings {
+  @include variables.text-sm;
+
+  &__subheader {
+    color: variables.$fg-secondary;
+  }
+}
